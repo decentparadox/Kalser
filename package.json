@@ -1,0 +1,31 @@
+{
+  "name": "de2de-cli",
+  "version": "1.0.0",
+  "description": "",
+  "bin": {
+    "de2de": "./bin/index.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "jiti ./src/index.ts",
+    "spinner": "jiti ./src/spinner.ts",
+    "prepare": "esbuild src/bin.ts --outfile=bin/index.js --bundle --platform=node  --target=node14 "
+
+  },
+  "keywords": [],
+  "author": "decentparadox",
+  "license": "ISC",
+  "dependencies": {
+    "@clack/core": "^0.3.3",
+    "@clack/prompts": "^0.7.0",
+    "commander": "^11.1.0",
+    "picocolors": "^1.0.0",
+    "zx": "^7.2.3"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.29",
+    "@types/node": "^20.11.2",
+    "jiti": "^1.17.0",
+    "esbuild": "^0.18.19"
+  }
+}
