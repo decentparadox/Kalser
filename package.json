@@ -1,9 +1,9 @@
 {
-  "name": "de2de-cli",
+  "name": "kalser-cli",
   "version": "1.0.0",
   "description": "",
   "bin": {
-    "de2de": "./bin/index.js"
+    "kalser": "./bin/index.js"
   },
   "main": "index.js",
   "scripts": {
