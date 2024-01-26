@@ -6,7 +6,17 @@ import { os } from 'zx';
 
 
 async function set() {
+    await exec(`clear`)
     console.clear();
+    await setTimeout(1000);
+    console.log(`
+    ____  __.      .__                       
+   |    |/ _|____  |  |   ______ ___________ 
+   |      < \\__  \\ |  |  /  ___// __ \\_  __ \\
+   |    |  \\ / __ \\|  |__\\___ \\\\  ___/|  | \\/
+   |____|__ (____  /____/____  >\\___  >__|   
+	   \\/    \\/          \\/     \\/       
+   `);
     p.intro(`${color.bgCyan(color.black(' De2De '))} ${color.bgCyan(color.black(' v0.0.1 '))}`);
 
     const setTheme:any = await p.group(

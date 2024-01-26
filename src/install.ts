@@ -18,12 +18,22 @@ async function install() {
 		p.cancel(`De2De: \n Error: Cannot use De2De in ${color.bgRed(color.white(`${osVersion}`))} when you're expected to use it in 'linux' \n `)
 		process.exit(0);
 	}
-
+	await exec(`clear`)
 	console.clear();
 
 	await setTimeout(1000);
+	console.log(`
+    ____  __.      .__                       
+   |    |/ _|____  |  |   ______ ___________ 
+   |      < \\__  \\ |  |  /  ___// __ \\_  __ \\
+   |    |  \\ / __ \\|  |__\\___ \\\\  ___/|  | \\/
+   |____|__ (____  /____/____  >\\___  >__|   
+	   \\/    \\/          \\/     \\/       
+   `);
+   
 
-	p.intro(`${color.bgCyan(color.black(' De2De '))} ${color.bgCyan(color.black(' v0.0.1 '))}`);
+
+	p.intro(`${color.bgCyan(color.black(' Kalser '))} ${color.bgCyan(color.black(' v0.0.1 '))}`);
 
 	let SysInfo = `Username: ${os.userInfo().username} \nOS Version: ${osVersion}\nOS Platform: ${osPlatform}\nDesktop Session: ${desktopSession}\nDesktop Environment: ${desktopEnvironment}  `
 	p.note(SysInfo, `${color.blue('System Info')}`);
