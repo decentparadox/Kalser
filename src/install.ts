@@ -46,6 +46,7 @@ async function install() {
 	p.note(SysInfo, `${color.blue('System Info')}`);
 	if (desktopDistro == "ubuntu"){await handleUbuntu()}
 	if (desktopDistro == "arch"){await handleArch()}
+	
 
 
 }

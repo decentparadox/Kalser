@@ -17,7 +17,7 @@ async function set() {
    |____|__ (____  /____/____  >\\___  >__|   
 	   \\/    \\/          \\/     \\/       
    `);
-    p.intro(`${color.bgCyan(color.black(' De2De '))} ${color.bgCyan(color.black(' v0.0.1 '))}`);
+    p.intro(`${color.bgCyan(color.black(' Kalser '))} ${color.bgCyan(color.black(' v0.0.1 '))}`);
 
     const setTheme:any = await p.group(
         {
